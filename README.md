@@ -57,9 +57,9 @@ https://www.overleaf.com
 Utilizzare un compilatore online è ottimale per i principianti o per chi non è molto confident con la cli. Allo stesso tempo però renderà molto più macchinoso il workflow tramite git.
 Bisognerà infatti:
 
--Fare il pull della repo
--Copiare e incollare il codice su overleaf
--Modificare il codice
--Scaricare il codice
--Creare un commit
--Fare il push sulla propria branch
+  - Fare il pull della repo
+  - Copiare e incollare il codice su overleaf
+  - Modificare il codice
+  - Scaricare il codice
+  - Creare un commit
+  - Fare il push sulla propria branch
