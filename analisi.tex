@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{amssymb}
 \usepackage{amsmath}
 
 \title{Analisi Matematica}
@@ -25,7 +26,7 @@
     \subsubsection{Inclusione}
         \begin{LARGE}
             \begin{equation*}
-                A \subseteq B
+                A\ \subseteq\ B
             \end{equation*}
         \end{LARGE}
         Tutti gli elementi di A appartengono a B\newline
@@ -34,13 +35,13 @@
         
         \begin{LARGE}
             \begin{equation*}
-                A = \{2,5,6,7\}
+                A\ =\ \{2,5,6,7\}
             \end{equation*}
             \begin{equation*}
-                B = \{1,2,3,4,5,6,7,8,9\}
+                B\ =\ \{1,2,3,4,5,6,7,8,9\}
             \end{equation*}
             \begin{equation*}
-                A \subseteq B
+                A\ \subseteq\ B
             \end{equation*}
         \end{LARGE}
         Il sottoinsieme si dice \textit{improprio} se A coincide con B, altrimenti si dice \textit{proprio}.
@@ -48,7 +49,7 @@
     \subsubsection{Unione}
         \begin{LARGE}
             \begin{equation*}
-                A \cup B
+                A\ \cup\ B
             \end{equation*}
         \end{LARGE}
         Tutti gli elementi del primo insieme e tutti gli elementi del secondo\newline
@@ -57,14 +58,14 @@
         
         \begin{LARGE}
             \begin{equation*}
-                A \cup B = \{x | x \in A \vee x \in B\}
+                A\ \cup\ B\ =\ \{x\ |\ x\ \in\ A\ \vee\ x\ \in\ B\}
             \end{equation*}
         \end{LARGE}
 
         \subsubsection{Intersezione}
         \begin{LARGE}
             \begin{equation*}
-                A \cap B
+                A\ \cap\ B
             \end{equation*}
         \end{LARGE}
         Tutti gli elementi comuni al primo e al secondo insieme\newline
@@ -73,7 +74,7 @@
         
         \begin{LARGE}
             \begin{equation*}
-                A \cap B = \{x | x \in A \wedge x \in B\}
+                A\ \cap\ B\ =\ \{x\ |\ x\ \in\ A\ \wedge\ x\ \in\ B\}
             \end{equation*}
         \end{LARGE}
 
@@ -89,7 +90,7 @@
         
         \begin{LARGE}
             \begin{equation*}
-                A \backslash B = \{x | x \in A \wedge x \notin B\}
+                A\ \backslash\ B\ =\ \{x\ |\ x\ \in\ A\ \wedge\ x\ \notin\ B\}
             \end{equation*}
         \end{LARGE}
 
@@ -97,14 +98,14 @@
 
         \begin{Large}
             \begin{equation*}
-                A \backslash B \ne B \backslash A
+                A\ \backslash\ B\ \ne\ B\ \backslash\ A
             \end{equation*}
         \end{Large}
 
         \subsubsection{Differenza Simmetrica}
         \begin{LARGE}
             \begin{equation*}
-                A \bigtriangleup B
+                A\ \bigtriangleup\ B
             \end{equation*}
         \end{LARGE}
         
@@ -112,7 +113,7 @@
         
         \begin{LARGE}
             \begin{equation*}
-                A \bigtriangleup B = (A \backslash B) \cup (B \backslash A)
+                A\ \bigtriangleup\ B\ =\ (A\ \backslash\ B)\ \cup\ (B\ \backslash\ A)
             \end{equation*}
         \end{LARGE}
 
@@ -120,7 +121,7 @@
 
         \begin{Large}
             \begin{equation*}
-                A \bigtriangleup B = B \bigtriangleup A
+                A\ \bigtriangleup\ B\ =\ B\ \bigtriangleup\ A
             \end{equation*}
         \end{Large}
 
@@ -135,7 +136,7 @@
         
         \begin{LARGE}
             \begin{equation*}
-                A \times B = \{(a,b) | a \in A \wedge b \in B\}
+                A\ \times\ B = \{(a,b)\ |\ a\ \in\ A\ \wedge\ b\ \in\ B\}
             \end{equation*}
         \end{LARGE}
 
@@ -143,7 +144,7 @@
 
         \begin{Large}
             \begin{equation*}
-                (a,b) \ne (b,a) \Rightarrow A \times B \ne B \times A
+                (a,b)\ \ne\ (b,a)\ \Rightarrow\ A\ \times\ B\ \ne\ B\ \times\ A
             \end{equation*}
         \end{Large}
 
@@ -154,4 +155,35 @@
                     A = \oslash
                 \end{equation*}
             \end{LARGE}
+        
+\section{Proposizioni}
+    \subsection{Definizione}
+        Una proposizione è un'affermazione che è falsa o vera e che può implicare altre affermazioni.
+        \newpage
+        Con $p, q$ proposizioni:
+
+        \begin{LARGE}
+            \begin{equation*}
+                p \Rightarrow q
+            \end{equation*}
+        \begin{equation*}
+              \Downarrow
+        \end{equation*}
+        \begin{equation*}
+              p\ implica\ q
+        \end{equation*}
+        \end{LARGE}
+        Se $p$ \textit{implica} $q$ e $q$ \textit{implica} $p$ si dicono \textit{equivalenti}\newline
+        \begin{LARGE}
+            \begin{equation*}
+                p\ \iff\ q
+            \end{equation*}
+        \end{LARGE}
+        \subsection{Quantificatori}
+            \begin{itemize}
+                \item $\forall$ - per ogni
+                \item $\exists$ - esiste
+                \item $\exists!$ - esiste ed è unico
+                \item $\nexists$ - non esiste
+            \end{itemize}
 \end{document}
