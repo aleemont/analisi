@@ -1,0 +1,26 @@
+\subsection{Principio di induzione}
+        \subsubsection*{Teorema}
+            Sia $p(n)$ un insieme di proposizioni al variare di $n\ \in\ \mathbb{N}$.\\
+            Supponiamo che:\\
+            \begin{itemize}
+                \item $p(0)$ sia vera
+                \item $\forall\ n\ \in\ \mathbb{N}, p(n)$ vera $\Rightarrow\ p(n\ +\ 1)$ vera. 
+            \end{itemize}
+        \subsubsection*{Esempio}
+        Dimostrare: \[1+2+3+\cdots+n \Rightarrow \sum_{k=1}^{n}k = \frac{n(n+1)}{2}\] 
+            \paragraph{Dimostrazione per induzione: \\}
+            \begin{equation}
+                p(1) \Rightarrow \frac{1(2)}{2} = 1 \Rightarrow vera
+            \end{equation}
+            \begin{equation}
+                    \sum_{k=1}^{n+1}k = \frac{(n+1)(n+2)}{2}\ ?
+            \end{equation}
+            \begin{equation*}
+                \sum_{k=1}^{n+1}k = 1+2+3+\cdots+n+(n+1) = \frac{n(n+1)}{2}+(n+1)=
+            \end{equation*}
+            \begin{equation*}
+                =n+1(\frac{n}{2}+1)=n+1(\frac{n+2}{2})=\frac{(n+1)(n+2)}{2}\ \Rightarrow\ p(n+1)\ vera
+            \end{equation*}
+            \hfill \break
+            La proposizione è verificata.
+\

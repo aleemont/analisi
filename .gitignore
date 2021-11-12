@@ -1,4 +1,8 @@
-*
 !*.pdf
 !*.tex
 !.gitignore
+*.aux
+*.fls
+*.log
+*.out
+*.toc
