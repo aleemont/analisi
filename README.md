@@ -1,5 +1,5 @@
 # Analisi Matematica
-Appunti di Analisi Matematica per il corso di Ingegneria e Scienze Informatiche (A.A. 2021/2022).
+##Appunti di Analisi Matematica per il corso di Ingegneria e Scienze Informatiche (A.A. 2021/2022).
 
 INFO sul corso: https://corsi.unibo.it/laurea/IngegneriaScienzeInformatiche
 
@@ -9,7 +9,7 @@ INFO sul corso: https://corsi.unibo.it/laurea/IngegneriaScienzeInformatiche
 
       git clone https://github.com/aleemont/analisi/
 
-- Oppure pull repository (Prima di iniziare a lavorare, obbligatorio o si causerà un conflitto)
+- Oppure pull repository (Prima di iniziare a lavorare, obbligatorio o si causerà un conflitto quando si tenterà di fare il merge delle modifiche sulla main branch)
 
        git pull origin main
 
@@ -17,7 +17,11 @@ INFO sul corso: https://corsi.unibo.it/laurea/IngegneriaScienzeInformatiche
 
        git branch -M NomeCognome
 
- Esegui le modifiche e aggiungi i file modificati
+- Esegui le modifiche
+
+> ATTENZIONE: Dovrai creare un nuovo file per ogni capitolo che aggiungerai
+
+- Aggiungi i file modificati
 
        git add --all
 
