@@ -1,0 +1,265 @@
+\section{Collezioni}
+\subsection{Insiemi Numerici}
+    \begin{itemize}
+        \item $\mathbb{N} = \text{Numeri Naturali} = \{0,1,2,3,4,...\}$
+        \item $\mathbb{Z} = \text{Numeri Interi} = \{-2,-1,0,1,2,...\}$
+        \item $\mathbb{Q} = \text{Numeri Razionali} = \{q\ =\ \frac{m}{n},\ m,n \in \mathbb{Z} \land n \neq 0\}$
+        \item $\mathbb{R} = \text{Numeri Reali} = \mathbb{Q}\ \cup\ \mathbb{I} = \text{Numeri Razionali } \cup \text{ Numeri Irrazionali}$\footnote{(Decimali illimitati non periodici come $\sqrt{2}, \pi, e$)}\newline 
+    \end{itemize}
+    \subsubsection*{Teorema}
+    \begin{Large}
+        \begin{equation*}
+            q \in \mathbb{Q} \Rightarrow q^2 \neq 2
+        \end{equation*}
+    \end{Large}
+    \subsubsection*{Dimostrazione}
+        Supponiamo \textbf{per assurdo} che $q^2 = 2$.
+        Per ipotesi $q = \frac{m}{n},\ m,n \in \mathbb{Z} \land n \neq 0$ e possiamo supporre che
+        $\frac{m}{n}$ sia ridotta ai minimi termini.
+        \begin{Large}
+            \[
+                \systeme{q^2=2,q=\frac{m}{n}} 
+                    \iff m^2 = 2n^2
+                    \Rightarrow m^2\ \text{è pari} \Rightarrow m\ \text{è pari}
+                    \Rightarrow m = 2p, p \in \mathbb{Z} \text{ è pari}\Rightarrow\]
+            \[
+                \Rightarrow n \text{ è pari}\Rightarrow m \text{ ed } n \text{ hanno il fattore } 2 \text{ in comune}.
+            \]\newline
+        \end{Large}
+        \textit{Assurdo} perchè per ipotesi $\frac{m}{n}$ era ridotta ai minimi termini.
+\subsection{Assiomi di $\mathbb{R}$}
+    $\mathbb{R}$ è un campo, cioè un insieme su cui sono definite due operazioni (+ e $\cdot$) che gode delle seguenti proprietà:
+
+    \begin{itemize}
+        \item \textbf{Proprietà associativa}
+        \begin{Large}
+            \[\forall x,y,z \in \mathbb{R}\]
+            \[(x+y)+z = x+(y+z)\]
+            \[(x \cdot y)\cdot z = x \cdot (y \cdot z)\]
+        \end{Large}
+            
+        \item \textbf{Proprietà commutiativa}
+        \begin{Large}
+            \[\forall x,y \in \mathbb{R}\]
+            \[x + y = y + x\]
+            \[x \cdot y = y \cdot x\]
+        \end{Large}
+            
+        \item \textbf{Proprietà distributiva}
+        \begin{Large}
+            \[\forall x,y,z \in \mathbb{R},x\cdot(y+z) = x \cdot y + x \cdot z\]
+        \end{Large}
+        \item $\exists$\textbf{ Elemento neutro}
+        \begin{Large}
+            \[0+x = x \forall x \in \mathbb{R}\]
+            \[1 \cdot x = x \forall x \in \mathbb{R}\]
+        \end{Large}
+            
+        \item $\exists$\textbf{ Opposto}
+        \begin{Large}
+            \[\forall x \in \mathbb{R},\exists y \in \mathbb{R}\ |\ x + y = 0\]
+        \end{Large}
+            
+        \item $\exists$\textbf{ Reciproco o inverso}
+        \begin{Large}
+            \[\forall x \in \mathbb{R}, \exists y \in \mathbb{R}\ |\ x \cdot y = 1\]
+        \end{Large}
+            
+        \item \textbf{Assioma d'ordine}\\
+            È sempre possibile dire se un numero è maggiore o minore di un altro.
+            \[\mathbb{R}\text{ è un campo sempre ordinato}\]
+        \item \textbf{Assioma di completezza}\\
+            Siano $A$ e $B$ due sottinsiemi separati (cioè $\forall a \in A,\forall b \in b \Rightarrow a \leq b$), 
+            allora:
+            \begin{Large}
+            \[
+                \exists x \in \mathbb{R}\ |\ a \leq c \leq b\ \forall\ a \in A, b \in B     
+            \]
+            \end{Large}
+            
+            In sostanza, tra due numeri reali esistono infiniti numeri reali.
+    \end{itemize}
+\subsection{Cardinalità}
+\textit{Contare} gli elementi di un insieme significa stabilire una corrispondenza iniettica con un sottoinsieme di $\mathbb{N}$.
+
+\subsubsection*{Esempio}
+\begin{Large}
+    \[
+        A = \{\bullet,\bullet,\bullet\}
+    \]
+    \[
+        \Downarrow
+    \]
+    \[
+        \text{3 elementi}    
+    \]
+\end{Large}
+Se $A$ ha infiniti elementi e può essere messo in corrispondenza biunivoca con $\mathbb{N},\ A$ si dice \textbf{numerabile}
+\subsubsection*{Esempio}
+    \begin{Large}
+    \[A = \{n \in \mathbb{N}\ |\ \text{n è pari} \}\] \newline
+    \end{Large}
+    \[A \text{ è equipotente a }\mathbb{N}\]
+    \[\mathbb{Q} \text{ è numerabile}\]
+    \[\mathbb{R} \text{ non è numerabile}\]
+\subsection{Proprietà di densità}
+    $\mathbb{Q} \text{ e } \mathbb{R} \setminus \mathbb{Q} \text{ sono \textbf{densi} su }\mathbb{R}.$
+    \begin{Large}
+        \begin{equation*}
+            \forall\ a,b \in \mathbb{R},a \le b
+        \end{equation*}
+        \begin{equation*}
+            \exists\ c \in \mathbb{Q}\ |\ a \le c \le b 
+        \end{equation*}
+    \end{Large}
+\subsection{Notazioni}
+\begin{Large}
+    $\mathbb{R}^{\star} = \mathbb{R} \setminus \{0\}$\newline
+    $\mathbb{R}_{+} = \{x \in \mathbb{R}\ |\ x \geq 0\}$\newline
+    $\mathbb{R}_{+}^{\star} = \{x \in \mathbb{R}\ |\ x > 0\}$
+\end{Large}
+\subsection{Massimo e Minimo}
+\subsubsection*{Definizioni}
+\subsubsection{Massimo}
+Sia $A \subseteq \mathbb{R}, A \neq \varnothing$, un numero reale $\lambda$ si dice \textbf{massimo} di $A$ se:
+\begin{Large}
+    \begin{equation*}
+        \lambda \in A, \lambda \geq x \forall x \in A
+    \end{equation*}
+\end{Large}
+\subsubsection{Minimo}
+Sia $A \subseteq \mathbb{R}, A \neq \varnothing$, un numero reale $\mu$ si dice \textbf{minimo} di $A$ se:
+\begin{Large}
+    \begin{equation*}
+        \mu \in A, \mu \leq x \forall x \in A
+    \end{equation*}
+\end{Large}
+\subsubsection*{Esempi}
+
+    \begin{itemize}
+    \item
+    \[
+        A = \mathbb{R}_{+}    
+    \]
+    \[
+        \exists\ min\ A = 0,\ \nexists\ max\ A    
+    \]
+
+    \item
+    \[
+        A = \{\frac{1}{n}\ |\ n\in \mathbb{N}\setminus\{0\}\}
+    \]
+    \[
+        \exists\ max\ A = 1,\ \nexists\ min\ A    
+    \]
+    \newline
+    infatti: \[
+        \frac{1}{n+1} < \frac{1}{n}
+    \]
+    \newline
+    \item
+    \[
+        A = \mathbb{R}_{+}^{\star}    
+    \]
+    \[
+        \nexists\ min\ A, \nexists\ max\ A    
+    \]
+    \newline
+    Infatti se $x \in A$:
+    \[
+        \frac{x}{2} \in A,\ \frac{x}{2} < x\ \forall x \in A    
+    \]
+    \end{itemize}
+    \subsection{Maggioranti e Minoranti}
+    \subsubsection{Maggiorante}
+    \subsubsection*{Definizione}
+    Sia $A \subseteq \mathbb{R}, A \neq \varnothing$, diciamo che $\lambda \in \mathbb{R}$ è un \textbf{maggiorante} di $A$ se:
+    \begin{Large}
+        \[
+            \lambda \geq x\ \forall\ x \in A    
+        \]
+    \end{Large}
+    \subsubsection{Minorante}
+    \subsubsection*{Definizione}
+    Sia $A \subseteq \mathbb{R}, A \neq \varnothing$, diciamo che $\mu \in \mathbb{R}$ è un \textbf{minorante} di $A$ se:
+    \begin{Large}
+        \[
+            \mu \leq x\ \forall\ x \in A
+        \]
+    \end{Large}
+    \subsubsection*{Definizione}
+    Se $A$ ammette un maggiorante allora si dice \textbf{superiormente limitato}, se ammette un minorante
+    si dice \textbf{inferiormente limitato}. Se ammette entrambi si dice \textbf{limitato}.
+
+    \subsubsection*{Osservazione}
+    Finito $\Rightarrow$ limitato, limitato $\neq$ finito
+    \subsubsection*{Teorema}
+    Sia $A \subseteq \mathbb{R}, A \neq \varnothing$
+    \begin{itemize}
+        \item Sia $A$ sup. limitato $\Rightarrow$ l'insieme dei maggioranti ammette minimo
+        \item Sia $A$ inf. limitato $\Rightarrow$ l'insieme dei minoranti ammette massimo.
+    \end{itemize}
+    \subsubsection*{Osservazione}
+    Se un insieme ammette massimo o minimo, esso è unico.
+    \subsubsection*{Definizione}
+    Se $A$ è sup. limitato chiamo \textbf{estremo superiore} di $A$ (sup.$A$) il minimo dell'insieme
+    dei maggioranti, e viceversa(inf.$A$).
+    Se $A$ non è sup. limitato, poniamo sup.$A = + \infty$ e analogamente $-\infty$ se non è inf. limitato.
+    \subsubsection*{Esempio}
+    \begin{Large}
+        \[
+            A = \{x \in \mathbb{R}\ |\ 0 \leq x \leq 3\}
+        \]
+        \[
+            inf.\ A = min\ A = 0
+            sup.\ A = 3,\ \nexists\ max\ A     
+        \]
+    \end{Large}
+\subsection{Intervalli di $\mathbb{R}$}
+\begin{Large}
+\begin{itemize}
+    \item $(a,b) = ]a,b[= \{x \in \mathbb{R}\ |\ a < x < b\}$
+    \item $[a,b]=\{x \in \mathbb{R}\ |\ a \leq x \leq b\}$
+    \item $(a,b] = \{x \in \mathbb{R}\ |\ a < x \leq b\})$
+    \item $(a,+\infty) = \{x \in \mathbb{R}\ |\ x > a\}$
+    \item $(-\infty,b) = \{x \in \mathbb{R}\ |\ x < b \}$
+\end{itemize}
+\end{Large}
+Questi insiemi sono \textit{intervalli} in quanto soddisfano la seguente proprietà:
+\subsubsection*{Definizione}
+Sia $A\subseteq\mathbb{R}$, diciamo che $A$ è un intervallo se\\
+\begin{Large}
+    \[
+    \forall\ c,d \in A, \forall\ h \in \mathbb{R}\ |\ c \leq h \leq d \Rightarrow h \in A
+    \]
+\end{Large}
+\subsubsection*{Esempi}
+\begin{itemize}
+    \item $(2,3)$ è un intervallo
+    \item $(2,3) \cup (4,5)$ non è un intervallo in quanto esso non comprende i valori compresi tra $3$ e $4$.
+\end{itemize}
+\subsubsection{Punto interno di un intervallo}
+\subsubsection*{Definizione}
+Sia $I$ intervallo di $\mathbb{R}$, diciamo che $c$ è un punto interno di $I$ quando $c \in I$ ma $c$ non è estremo,
+cioè $c \in I \setminus \{inf\ I, sup\ I\}$\\
+$I = (a,b)=[a,b]\setminus\{a,b\}$
+L'insieme dei punti interni si definisce $\mathring{I}$
+\subsubsection{Tipi di intervalli}
+\begin{itemize}
+    \item \textbf{Limitato} se sono presenti maggiorante e minorante
+    \item \textbf{Aperto} se $I = \mathring{I}$
+    \item \textbf{chiuso} $[a,b]$ 
+\end{itemize}
+\subsection{Simmetria}
+\subsubsection*{Definizione}
+$A \subseteq \mathbb{R}$ è simmetrico rispetto all'origine se $x \in A \Rightarrow -x \in A$
+\subsubsection*{Esempio}
+$(-a,a)$
+\subsection{Periodicità}
+\subsubsection*{Definizione}
+Sia $T \subseteq \mathbb{R}_{+}^{\star}$, sia $A \subseteq \mathbb{R}$ diciamo che $A$ è $T-periodico$ se\\
+\begin{Large}
+    \begin{equation*}
+        \forall\ x \in A, \forall\ x \in \mathbb{Z} \Rightarrow x + kT \in A
+    \end{equation*}
+\end{Large}
