@@ -2,19 +2,20 @@
 \subsection{Definizione}
 Siano $A$ e $B$ due insiemi, $A,B \neq \varnothing$, chiamiamo \textbf{funzione} $f$ da $A$ a $B$
 una legge che ad ogni elemento di $A$ associa uno ed un solo elemento di $B$
+\begin{Large}
 \[
     \forall x \in A, \exists! y \in B\ |\ y = f(x)    
 \]
-\break \hfill
-\begin{Large}
+\vspace{-1em}
 \[
-    f: A \rightarrow B
+    f: A \text{\quad} \rightarrow \text{\quad} B
 \]
 \end{Large}
+\vspace{-6.5ex}
 \begin{center}
-    \hspace{0.75cm}$\Downarrow$ \hspace{0.75cm} $\Downarrow$\\
+    \hspace{2em}$\Downarrow$ \hspace{5em} $\Downarrow$\\
     \begin{small}
-    \qquad \quad \quad \{Dominio\} \{Codominio\}
+    \qquad \{Dominio\} \quad \{Codominio\}
     \end{small}
 \end{center}
 \subsubsection*{Esempio}
@@ -48,6 +49,63 @@ Il grafico di una funzione è un sottoinsime del \textbf{prodotto cartesiano} tr
 \end{Large}
 \subsection{Iniettività e Suriettività}
 \subsubsection*{Definizione}
-Diciamo che $f:A\rightarrow B$ e \textbf{suriettiva} se l'immagine (sottoinsime del codominio) coincide
+Diciamo che $f:A\rightarrow B$ è \textbf{suriettiva} se l'immagine (sottoinsime del codominio) coincide
 con il codominio
+\begin{large}
+\[
+    \forall\ y \in B, \exists\ x \in A\ |\ y = f(x)    
+\]
+\[
+    f:A \rightarrow B
+\]
+\end{large}
+\vspace{-7ex}
+\begin{center}
+\begin{small}
+    \hspace{0.5cm}$su$
+\end{small}
+\end{center}
+\subsubsection*{Definizione}
+Diciamo che $f:A\rightarrow B$ è \textbf{iniettiva} se:
+\begin{large}
+\[
+    \forall\ y \in\ f(A), \exists! x\ \in\ A\ |\ y = f(x)    
+\]
+\[
+    f:A \rightarrow B    
+\]
+\end{large}
+\vspace{-7ex}
+\begin{center}
+\begin{small}
+    \hspace{0.5cm}$|\text{\hspace{-0.1cm}}-\text{\hspace{-0.1cm}}|$
+\end{small}
+\end{center}
+\subsubsection*{Definizione}
+Diciamo che $f:A\rightarrow B$ è \textbf{biunivoca} (o biiettiva o invertibile) se è sia suriettiva che iniettiva.
 
+\subsubsection*{Esempio}
+\[f: \mathbb{R} \rightarrow \mathbb{R}\]
+\[f(x) = x^{2}\]
+
+$f$ non è suriettiva perchè non assume valori negativi, quindi non copre tutto il codominio $\mathbb{R}$.
+$f$ non è iniettiva perchè per ogni $x > 0$ esiste più di una $y$
+
+\subsubsection*{Definizione}
+Sia $f: A\rightarrow B$ biunivoca, chiamiamo funzione \textbf{inversa} di $f$ (indicandola con $f^{-1}$ la funzione:
+\begin{Large}
+\[
+    f:B \rightarrow A)
+\]
+\[
+    \forall\ y\ \in\ B,\ f^{-1}(y) = y = f(x)    
+\]
+\end{Large}
+\subsection{Composizione di funzioni}
+\subsubsection*{Definizione}
+Siano $X,Y,Z,W$ insiemi $\neq \oslash$,
+\[f:X \rightarrow Y, g:Z\rightarrow W\ |\ f(X) \subseteq Z\]
+chiamiamo \textbf{funzione composta} $g \circ f$ la funzione:
+\[
+    g \circ f: X \rightarrow W, (g \circ f)(x) = g(f(x)),\ \forall\ x \in X 
+\]
