@@ -103,9 +103,131 @@ Sia $f: A\rightarrow B$ biunivoca, chiamiamo funzione \textbf{inversa} di $f$ (i
 \end{Large}
 \subsection{Composizione di funzioni}
 \subsubsection*{Definizione}
-Siano $X,Y,Z,W$ insiemi $\neq \oslash$,
-\[f:X \rightarrow Y, g:Z\rightarrow W\ |\ f(X) \subseteq Z\]
-chiamiamo \textbf{funzione composta} $g \circ f$ la funzione:
+    Siano $X,Y,Z,W$ insiemi $\neq \oslash$,
+    \[f:X \rightarrow Y, g:Z\rightarrow W\ |\ f(X) \subseteq Z\]
+    chiamiamo \textbf{funzione composta} $g \circ f$ la funzione:
+    \begin{Large}
+    \[
+        g \circ f: X \rightarrow W, (g \circ f)(x) = g(f(x)),\ \forall\ x \in X 
+    \]
+    \end{Large}
+\subsubsection*{Esempio}
+\begin{Large}
+    \[
+        f : \mathbb{R} \rightarrow \mathbb{R}, f(x) = 2x + 1
+    \]
+    \[
+        g : \mathbb{R} \rightarrow \mathbb{R}, g(y) = y^{2}
+    \]
+    \[
+        (g \circ f)(x) = g(f(x)) = g(2x + 1) = (2x + 1)^{2} = 4x^{2} + 4x +1    
+    \]
+    \[
+        (f \circ g)(y) = f(g(y)) = f(y^{2}) = 2y^{2} + 1
+    \]
+    \[
+        g \circ f \neq f \circ g    
+    \]
+\end{Large}
+\subsection{Funzione identità}
+\begin{Large}
 \[
-    g \circ f: X \rightarrow W, (g \circ f)(x) = g(f(x)),\ \forall\ x \in X 
+    f \circ f^{-1} = f^{-1} \circ f = Id    
 \]
+\[
+    Id(x) = x    
+\]
+\end{Large}
+\subsubsection*{Teorema}
+Siano $f: X \rightarrow Y, g: Z \rightarrow W$ invertibili, $Y = Z \Rightarrow g \circ f$ è invertibile 
+e $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
+
+\subsection{Funzioni di una variabile reale}
+Sia $c \subseteq \mathbb{R}, f:A \rightarrow \mathbb{R}$
+\subsubsection*{Esempi}
+\begin{itemize}
+\item $f(x) = 2x + 1$
+\item $f(x) = |x|$
+\item $f(x) = sgn(x)$
+\item $f(x) = [x]$
+\end{itemize}
+\subsubsection*{Definizione}
+Sia $f:A\rightarrow \mathbb{R}, A \subseteq \mathbb{R}$, diciamo che $f$ è limitata se lo è $f(A)$.
+\begin{Large}
+\[
+    sup\ f = sup\ f(A)    
+\]
+\end{Large}
+\vspace{-7.5ex}
+\begin{center}
+\begin{small}
+    \hspace{0.7cm}A
+\end{small}
+\end{center}
+
+\subsubsection*{Definizione}
+$f:A \rightarrow \mathbb{R}, A \subseteq \mathbb{R}$
+\begin{itemize}
+    \item $f$ ha un massimo se lo ha $f(A)$
+    \item $f$ ha un minimo se lo ha $f(A)$
+\end{itemize}
+\begin{Large}
+    \[
+        \exists\ \bar{x} \in A\ |\ f(x) \leq f(\bar{x}) \forall\ x \in A
+    \]
+
+\vspace{-3ex}
+\begin{center}
+    \hspace{2cm} $\Downarrow$
+\end{center}
+\vspace{-4ex}
+\begin{center}
+    \hspace{2cm} $max\ f$
+\end{center}
+\end{Large}
+\subsubsection*{Esempio}
+\[
+    f:(0,1]\Rightarrow\mathbb{R}    
+\]
+\[
+    f(x) = 2x    
+\]
+\[
+    f((0,1]) = (0,2]    
+\]
+
+$(0,2]$ è limitato $\Rightarrow f$ è limitata
+\[
+    inf\ f = 0  \text{\hspace{3ex} sup\ f = 2}
+\]
+\vspace{-4.5ex}
+\begin{small}
+\[(0,1] \text{\hspace{9ex}} (0,1]\]
+\end{small}
+\[
+    max\ f = 2  \text{\hspace{3ex}} \nexists min\ f = 2
+\]
+\vspace{-4ex}
+\begin{small}
+\[(0,1] \text{\hspace{9ex}} (0,1]\]
+\end{small}
+
+\subsection{Funzioni crescenti e decrescenti}
+\subsubsection*{Definizione}
+$f:A\rightarrow \mathbb{R}, A \subseteq \mathbb{R}$ \\
+Diciamo che $f$ è \textbf{crescente} ($f \nearrow$) se:
+\begin{Large}
+    \[
+        \forall x_{1},x_{2}, x_{1}\leq x_{2} \Rightarrow f(x_{1}\leq f(x_{2}))
+    \]
+\end{Large}
+\subsubsection*{Definizione}
+$f:A \rightarrow \mathbb{R}, A \subseteq \mathbb{R}$ \\
+Diciamo che $f$ è \textbf{decrescente} ($f \searrow$) se:
+\begin{Large}
+    \[
+        \forall x_{1},x_{2}, x_{1}\leq x_{2} \Rightarrow f(x_{1}\geq f(x_{2}))    
+    \]
+\end{Large}
+\subsubsection*{Definizione}
+$f$ è strettamente crescente o decrescente se valgono le disuguaglianze strette.
