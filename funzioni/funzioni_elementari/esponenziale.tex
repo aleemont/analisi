@@ -1,0 +1,88 @@
+\subsection{Esponenziale}
+\subsubsection{Potenze}
+    \subsubsection*{Regole}
+        \begin{Large}
+            $a^{0} = 1,\ \forall\ x \in \mathbb{R}^{\star}_{+}$\\
+            $a^{n} = a \cdot a^{n+1}$
+        \end{Large}
+    \subsubsection*{Proprietà}
+        \begin{large}
+            \begin{enumerate}
+                \item $a^{n+m} = a^{n} \cdot a^{m}$
+                \item ${(a^{n})}^{m} = a^{n \cdot m}$
+                \item ${(a \cdot b)}^{n} = a^{n} \cdot b^{n}$
+            \end{enumerate}
+        \end{large}
+    \subsubsection*{Estensioni}
+        Sia l'esponente $n \in \mathbb{N}$.
+        \begin{large}
+            \begin{enumerate}
+                \item $a^{n-n} = a^{n} \cdot a^{-n} = a^{n} \cdot \frac{1}{a^{n}} = 1 \Rightarrow$ estendo a $n \in \mathbb{Z}$
+                \item ${(a^{\frac{1}{n}})}^{n} = a^{\frac{1}{n} \cdot n} = a$\\
+                    $\Rightarrow a^{\frac{p}{q}} = {(a^{p})}^{\frac{1}{q}} = \sqrt[{q}]{a^{p}}\ \ p,1 \in \mathbb{Z}$\\
+                    $\Rightarrow$ estendo a $n \in \mathbb{Q}$
+                \item Un numero reale può sempre essere approssimato ad un numero razionale per densità $\Rightarrow$ estendo a $n \in \mathbb{R}$.
+            \end{enumerate}
+        \end{large}
+\subsubsection{Funzione esponenziale}
+    \subsubsection*{Definizione}
+        Sia $a \in \mathbb{R}_{+} \setminus \{1\}$, chiamiamo \textbf{funzione esponenziale} in base $a$ la funzione:
+        \begin{Large}
+            \[\exp_{a}: \mathbb{R} \rightarrow \mathbb{R}\] 
+            \[\exp_{a}(x) = a^{x}\]
+        \end{Large}
+    \subsubsection*{Teorema}
+        \begin{large}
+            \begin{enumerate}
+                \item $\forall\ x \in \mathbb{R}, a^{n} > 0$
+                \item $\forall\ x,y \in \mathbb{R}, a^{x+y} = a^{x} \cdot a^{y}$
+                \item $\forall\ x,y \in \mathbb{R}, {(a^{x})}^{y} = a^{xy}$
+                \item ${(a \cdot b)}^{x} = a^{x} \cdot b^{x}$
+            \end{enumerate}
+        \end{large}
+    \subsubsection*{Teorema}
+        \begin{enumerate}
+            \item Se $a > 1 \Rightarrow \exp_{a}$ è strettamente crescente.
+            \item $Se 0 < a < 1 \Rightarrow \exp_{a}$ è strettamente decrescente.
+            \item $\exp_{a}: \mathbb{R} \rightarrow \mathbb{R}^{\star}_{+}$ è invertibile.   
+        \end{enumerate}
+\subsubsection{Funzione logaritmica}
+    \subsubsection*{Definizione}
+        Sia $a \in \mathbb{R}_{+} \setminus \{1\}$, chiamiamo \textbf{logaritmo} in base $a$ l'inversa di $\exp_{a}$:
+        \begin{Large}
+        \[
+            \log_{a} = {(\exp_{a})}^{-1}    
+        \]
+        \[
+            \log_{a}: \mathbb{R}^{\star} \rightarrow \mathbb{R}    
+        \]
+        \end{Large}
+    \subsubsection*{Teorema}
+        Sia $a \in \mathbb{R} \setminus \{1\}$
+        \begin{itemize}
+            \item Se $a > 1 \Rightarrow \log_{a}$ è strettamente $\nearrow$
+            \item Se $0 < a < 1 \Rightarrow \log_{a}$ è strettamente $\searrow$
+            \item $\log_{a}: \mathbb{R}^{\star}_{+} \rightarrow \mathbb{R}$ è invertibile.
+            \item $a^{\log_{a}{y}} = y$ 
+        \end{itemize}
+    \subparagraph*{Osservazione}
+        Il grafico di $\exp_{a}$ è $\log{a}$ sono simmetrici rispetto all'origine.
+    \subsubsection*{Proprietà}
+        \begin{large}
+        \begin{enumerate}
+            \item $\forall\ x, y \in \mathbb{R}^{\star}_{+},\ \log{xy} = \log{x} + \log{y}$
+            \item $\forall\ x, y \in \mathbb{R}^{\star}_{+},\ \log{\frac{x}{y}} = \log{x} - \log{y}$
+            \item $\forall\ x, y \in \mathbb{R}^{\star}_{+},\ a \in \mathbb{R}, \log{x^{a}} = a \log{x}$
+        \end{enumerate}
+        \end{large}
+    \subsubsection*{Dimostrazione}
+        \begin{Large}
+        $a^{\log_{a}{(xy)}} = xy = a^{\log_{a}{x}} \cdot a^{\log_{a}{y}}=a^{\log_{a}{x} + \log_{a}{y}} \Rightarrow$\\
+        $\Rightarrow \log_{a}{(xy)} = \log_{a}{x} + \log_{a}{y}$
+        \end{Large}
+        \subsubsection*{Cambio di base}
+        \begin{Large}
+        \[
+            \log_{b}{y} = \frac{\log_{a}{y}}{\log_{a}{b}}    
+        \]
+        \end{Large}
