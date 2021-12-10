@@ -8,16 +8,9 @@ una legge che ad ogni elemento di $A$ associa uno ed un solo elemento di $B$
 \]
 \vspace{-1em}
 \[
-    f: A \text{\quad} \rightarrow \text{\quad} B
+    f: \underbrace{A}_{\{Dominio\}} \rightarrow \underbrace{B}_{\{Codominio\}}
 \]
 \end{Large}
-\vspace{-6.5ex}
-\begin{center}
-    \hspace{2em}$\Downarrow$ \hspace{5em} $\Downarrow$\\
-    \begin{small}
-    \qquad \{Dominio\} \quad \{Codominio\}
-    \end{small}
-\end{center}
 \subsubsection*{Esempio}
 \begin{Large}
 \[
@@ -120,7 +113,7 @@ Sia $f: A\rightarrow B$ biunivoca, chiamiamo funzione \textbf{inversa} di $f$ (i
         g : \mathbb{R} \rightarrow \mathbb{R}, g(y) = y^{2}
     \]
     \[
-        (g \circ f)(x) = g(f(x)) = g(2x + 1) = (2x + 1)^{2} = 4x^{2} + 4x +1    
+        (g \circ f)(x) = g(f(x)) = g(2x + 1) = {(2x + 1)}^{2} = 4x^{2} + 4x +1    
     \]
     \[
         (f \circ g)(y) = f(g(y)) = f(y^{2}) = 2y^{2} + 1
@@ -140,7 +133,7 @@ Sia $f: A\rightarrow B$ biunivoca, chiamiamo funzione \textbf{inversa} di $f$ (i
 \end{Large}
 \subsubsection*{Teorema}
 Siano $f: X \rightarrow Y, g: Z \rightarrow W$ invertibili, $Y = Z \Rightarrow g \circ f$ è invertibile 
-e $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
+e ${(g \circ f)}^{-1} = f^{-1} \circ g^{-1}$.
 
 \subsection{Funzioni di una variabile reale}
 Sia $c \subseteq \mathbb{R}, f:A \rightarrow \mathbb{R}$
@@ -155,7 +148,7 @@ Sia $c \subseteq \mathbb{R}, f:A \rightarrow \mathbb{R}$
 Sia $f:A\rightarrow \mathbb{R}, A \subseteq \mathbb{R}$, diciamo che $f$ è limitata se lo è $f(A)$.
 \begin{Large}
 \[
-    sup\ f = sup\ f(A)    
+    \sup{f} = \sup{f(A)}    
 \]
 \end{Large}
 \vspace{-7.5ex}
@@ -173,17 +166,8 @@ $f:A \rightarrow \mathbb{R}, A \subseteq \mathbb{R}$
 \end{itemize}
 \begin{Large}
     \[
-        \exists\ \bar{x} \in A\ |\ f(x) \leq f(\bar{x}) \forall\ x \in A
+        \exists\ \bar{x} \in A\ |\ f(x) \leq \underbrace{f(\bar{x})}_{\max{f}} \forall\ x \in A
     \]
-
-\vspace{-3ex}
-\begin{center}
-    \hspace{2cm} $\Downarrow$
-\end{center}
-\vspace{-4ex}
-\begin{center}
-    \hspace{2cm} $max\ f$
-\end{center}
 \end{Large}
 \subsubsection*{Esempio}
 \[
@@ -196,16 +180,16 @@ $f:A \rightarrow \mathbb{R}, A \subseteq \mathbb{R}$
     f((0,1]) = (0,2]    
 \]
 
-$(0,2]$ è limitato $\Rightarrow f$ è limitata
+$ (0,2]$ è limitato $\Rightarrow f$ è limitata
 \[
-    inf\ f = 0  \text{\hspace{3ex} sup\ f = 2}
+    \inf{f} = 0  \text{\hspace{3ex}} \sup{f} = 2
 \]
 \vspace{-4.5ex}
 \begin{small}
 \[(0,1] \text{\hspace{9ex}} (0,1]\]
 \end{small}
 \[
-    max\ f = 2  \text{\hspace{3ex}} \nexists min\ f = 2
+    \max{f} = 2  \text{\hspace{3ex}} \nexists \min{f} = 2
 \]
 \vspace{-4ex}
 \begin{small}
@@ -231,3 +215,56 @@ Diciamo che $f$ è \textbf{decrescente} ($f \searrow$) se:
 \end{Large}
 \subsubsection*{Definizione}
 $f$ è strettamente crescente o decrescente se valgono le disuguaglianze strette.
+\subsubsection*{Esempio}
+$f:\mathbb{R} \rightarrow \mathbb{R}\ f(x) = mx + q$ \\
+Verifico se e quando $f \nearrow$ \\
+$x_{1},x_{2} \in \mathbb{R}\ |\ x_{1} \leq x_{2}$ \\
+$f(x_{1} = mx_{1} + q)$ \\
+$f(x_{2} = mx_{2} + q)$ \\ \\
+$f(x_1) \leq f(x_2) \iff mx_{1} + \cancel{q} \leq mx_{2} + \cancel{q}$\\
+    $\iff m(\underbrace{x_1+x_{2}}_{\leq 0}) \leq 0$ \\
+    $\iff m \geq 0$ \\
+    \[\Rightarrow f(x) = mx+q \text{ è } \begin{cases}
+        \nearrow \text{ se } m \geq 0\\
+        \searrow \text{ se } m < 0
+        \end{cases}
+    \]
+
+\subsection*{Monotonia}
+\subsubsection*{Definizione}
+Una funzione è \textbf{monotona} se è sempre crescente o sempre decrescente.
+\subsubsection*{Teorema}
+Sia $f:A \rightarrow \mathbb{R}, A \subseteq \mathbb{R}$
+\begin{enumerate}
+    \item Se $f$ è strettamente monotona $\Rightarrow f$ è iniettiva $\Rightarrow f:A \rightarrow f(A)$ è invertibile.
+    \item $f^{-1}:f(A) \rightarrow A$ è strettamente monotona con la stessa monotonia di $f$.
+\end{enumerate}
+\subsubsection*{Dimostrazione}
+\begin{enumerate}
+    \item Assumo $f$ strettamente crescente e voglio dimostrare che $f$ è iniettiva. \\ Siano:
+        \begin{itemize}
+            \item $x_{1},x_{2} \in A, x_1 < x_{2} \Rightarrow f(x_{1}) < f(x_{2}) $
+            \item $x_{1}, x_{2} \in A, x_1 > x_{2} \Rightarrow f(x_{1}) > f(x_{2}) $
+        \end{itemize}
+    \item Devo dimostrare che $f^{-1} \nearrow$.\\
+          $f^{-1}:f(A) \rightarrow A$\\
+          Siano $z_{1}, z_{2} \in f(A)$ con $z_{1} < z_{2}$,\\ devo dimostrare che $f^{-1}(z_{1}) < f^{-1}(z_{2})$. \\
+          Supponiamo per assurdo che: $f^{-1}(z_{1}) \geq f^{-1}(z_{2})$, ma $z_{1} = f(f^{-1}(z_{1}))$\\
+          Quindi:\\
+          $f(f^{-1}(z_{1})) \geq f(f^{-1}(z_{2})) \Rightarrow z_{1} \geq z_{2} \Rightarrow$ Assurdo (per ipotesi $z_{1} < z_{2}$).
+\end{enumerate}
+\subsection{Simmetria di una funzione}
+\subsubsection*{Definizione}
+Sia $A$ \textbf{simmetrico} rispetto all'origine, sia $f:A \rightarrow \mathbb{R}$, diciamo che:
+\begin{itemize}
+    \item $f$ è \textbf{pari} se $f(x) = f(-x)$
+    \item $f$ è \textbf{dispari} se $f(x) = -f(x)$
+\end{itemize}
+\subsection{Periodicità di una funzione}
+\subsubsection*{Definizione}
+Sia $A \subseteq \mathbb{R}$ \textbf{periodico}, sia $f: A \rightarrow \mathbb{R}$, diciamo che $f$ è $T-periodica$ se
+\begin{Large}
+    \[
+        \forall\ x \in A,\ f(x) = f(x+kT) \forall\ k \in \mathbb{Z}    
+    \]
+\end{Large}
