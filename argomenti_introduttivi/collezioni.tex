@@ -1,8 +1,8 @@
 \section{Collezioni}
 \subsection{Insiemi Numerici}
     \begin{itemize}
-        \item $\mathbb{N} = \text{Numeri Naturali} = \{0,1,2,3,4,...\}$
-        \item $\mathbb{Z} = \text{Numeri Interi} = \{-2,-1,0,1,2,...\}$
+        \item $\mathbb{N} = \text{Numeri Naturali} = \{0,1,2,3,4,\cdots\}$
+        \item $\mathbb{Z} = \text{Numeri Interi} = \{-2,-1,0,1,2,\cdots\}$
         \item $\mathbb{Q} = \text{Numeri Razionali} = \{q\ =\ \frac{m}{n},\ m,n \in \mathbb{Z} \land n \neq 0\}$
         \item $\mathbb{R} = \text{Numeri Reali} = \mathbb{Q}\ \cup\ \mathbb{I} = \text{Numeri Razionali } \cup \text{ Numeri Irrazionali}$\footnote{(Decimali illimitati non periodici come $\sqrt{2}, \pi, e$)}\newline 
     \end{itemize}
@@ -103,7 +103,7 @@ Se $A$ ha infiniti elementi e può essere messo in corrispondenza biunivoca con 
     \[\mathbb{Q} \text{ è numerabile}\]
     \[\mathbb{R} \text{ non è numerabile}\]
 \subsection{Proprietà di densità}
-    $\mathbb{Q} \text{ e } \mathbb{R} \setminus \mathbb{Q} \text{ sono \textbf{densi} su }\mathbb{R}.$
+    $\mathbb{Q} \text{ e } \mathbb{R} \setminus \mathbb{Q} \text{ sono \textbf{densi} su }\mathbb{R}$.
     \begin{Large}
         \begin{equation*}
             \forall\ a,b \in \mathbb{R},a \le b
@@ -142,7 +142,7 @@ Sia $A \subseteq \mathbb{R}, A \neq \varnothing$, un numero reale $\mu$ si dice 
         A = \mathbb{R}_{+}    
     \]
     \[
-        \exists\ min\ A = 0,\ \nexists\ max\ A    
+        \exists\ \min{A} = 0,\ \nexists\ \max{A}    
     \]
 
     \item
@@ -150,7 +150,7 @@ Sia $A \subseteq \mathbb{R}, A \neq \varnothing$, un numero reale $\mu$ si dice 
         A = \{\frac{1}{n}\ |\ n\in \mathbb{N}\setminus\{0\}\}
     \]
     \[
-        \exists\ max\ A = 1,\ \nexists\ min\ A    
+        \exists\ \max{A} = 1,\ \nexists\ \min{A}    
     \]
     \newline
     infatti: \[
@@ -162,7 +162,7 @@ Sia $A \subseteq \mathbb{R}, A \neq \varnothing$, un numero reale $\mu$ si dice 
         A = \mathbb{R}_{+}^{\star}    
     \]
     \[
-        \nexists\ min\ A, \nexists\ max\ A    
+        \nexists\ \min{A}, \nexists\ \max{A}    
     \]
     \newline
     Infatti se $x \in A$:
@@ -196,23 +196,23 @@ Sia $A \subseteq \mathbb{R}, A \neq \varnothing$, un numero reale $\mu$ si dice 
     \subsubsection*{Teorema}
     Sia $A \subseteq \mathbb{R}, A \neq \varnothing$
     \begin{itemize}
-        \item Sia $A$ sup. limitato $\Rightarrow$ l'insieme dei maggioranti ammette minimo
-        \item Sia $A$ inf. limitato $\Rightarrow$ l'insieme dei minoranti ammette massimo.
+        \item Sia $A$ sup.\ limitato $\Rightarrow$ l'insieme dei maggioranti ammette minimo
+        \item Sia $A$ inf.\ limitato $\Rightarrow$ l'insieme dei minoranti ammette massimo.
     \end{itemize}
     \subsubsection*{Osservazione}
     Se un insieme ammette massimo o minimo, esso è unico.
     \subsubsection*{Definizione}
-    Se $A$ è sup. limitato chiamo \textbf{estremo superiore} di $A$ (sup.$A$) il minimo dell'insieme
-    dei maggioranti, e viceversa(inf.$A$).
-    Se $A$ non è sup. limitato, poniamo sup.$A = + \infty$ e analogamente $-\infty$ se non è inf. limitato.
+    Se $A$ è sup.\ limitato chiamo \textbf{estremo superiore} di $A$ (sup.$A$) il minimo dell'insieme
+    dei maggioranti, e viceversa (inf.$A$).
+    Se $A$ non è sup.\ limitato, poniamo sup.$A = + \infty$ e analogamente $-\infty$ se non è inf.\ limitato.
     \subsubsection*{Esempio}
     \begin{Large}
         \[
             A = \{x \in \mathbb{R}\ |\ 0 \leq x \leq 3\}
         \]
         \[
-            inf.\ A = min\ A = 0
-            sup.\ A = 3,\ \nexists\ max\ A     
+            \inf{A} = \min{A} = 0
+            \sup{A} = 3,\ \nexists\ \max{A}     
         \]
     \end{Large}
 \subsection{Intervalli di $\mathbb{R}$}
@@ -241,7 +241,7 @@ Sia $A\subseteq\mathbb{R}$, diciamo che $A$ è un intervallo se\\
 \subsubsection{Punto interno di un intervallo}
 \subsubsection*{Definizione}
 Sia $I$ intervallo di $\mathbb{R}$, diciamo che $c$ è un punto interno di $I$ quando $c \in I$ ma $c$ non è estremo,
-cioè $c \in I \setminus \{inf\ I, sup\ I\}$\\
+cioè $c \in I \setminus \{\inf{I}, \sup{I}\}$\\
 $I = (a,b)=[a,b]\setminus\{a,b\}$
 L'insieme dei punti interni si definisce $\mathring{I}$
 \subsubsection{Tipi di intervalli}

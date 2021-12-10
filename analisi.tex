@@ -5,6 +5,10 @@
 \usepackage{amsfonts}
 \usepackage{hyperref}
 \usepackage{systeme}
+\usepackage{cancel}
+\usepackage{graphicx}
+\graphicspath{ {./img/} }
+\renewcommand{\contentsname}{Indice}
 
 \title{Analisi Matematica}
 \author{Alessandro Monticelli}
@@ -17,13 +21,18 @@
 \tableofcontents
 \newpage
 \section*{Introduzione}
-    Appunti di Analisi matematica - corso di Ingegneria e Scienze Informatiche.
+    Appunti di Analisi matematica \- corso di Ingegneria e Scienze Informatiche.
 \addcontentsline{toc}{section}{Introduzione}
 \newpage
-\include{argomenti_introduttivi/insiemi}
-\include{argomenti_introduttivi/proposizioni}
-\include{argomenti_introduttivi/induzione}
-\include{argomenti_introduttivi/collezioni}
-\include{funzioni/funzioni}
-\include{funzioni/hopital}
+    \include{argomenti_introduttivi/insiemi}
+    \include{argomenti_introduttivi/proposizioni}
+    \include{argomenti_introduttivi/induzione}
+    \include{argomenti_introduttivi/collezioni}
+    \include{funzioni/funzioni}
+    \include{funzioni/hopital}
+\section{Funzioni elementari}
+    \include{funzioni/funzioni_elementari/valore_assoluto}
+    \include{funzioni/funzioni_elementari/radice}
+    \include{funzioni/funzioni_elementari/esponenziale}
+    \include{funzioni/funzioni_elementari/goniometriche}
 \end{document}

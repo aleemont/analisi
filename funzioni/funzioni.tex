@@ -3,231 +3,270 @@
 Siano $A$ e $B$ due insiemi, $A,B \neq \varnothing$, chiamiamo \textbf{funzione} $f$ da $A$ a $B$
 una legge che ad ogni elemento di $A$ associa uno ed un solo elemento di $B$
 \begin{Large}
-\[
-    \forall x \in A, \exists! y \in B\ |\ y = f(x)    
-\]
-\vspace{-1em}
-\[
-    f: A \text{\quad} \rightarrow \text{\quad} B
-\]
+    \[
+        \forall x \in A, \exists! y \in B\ |\ y = f(x)    
+    \]
+    \vspace{-1em}
+    \[
+        f: \underbrace{A}_{\{Dominio\}} \rightarrow \underbrace{B}_{\{Codominio\}}
+    \]
 \end{Large}
-\vspace{-6.5ex}
-\begin{center}
-    \hspace{2em}$\Downarrow$ \hspace{5em} $\Downarrow$\\
-    \begin{small}
-    \qquad \{Dominio\} \quad \{Codominio\}
-    \end{small}
-\end{center}
 \subsubsection*{Esempio}
-\begin{Large}
-\[
-    f: \mathbb{R} \rightarrow \mathbb{R}    
-\]
-\[
-    f(x) = 2x    
-\]
-\end{Large}
-oppure
-\begin{Large}
-\[
-    f: \mathbb{R} \rightarrow \mathbb{R}
-\]
-\[
-    x \mapsto 2x
-\]
-\end{Large}
+    \begin{Large}
+        \[
+            f: \mathbb{R} \rightarrow \mathbb{R}    
+        \]
+        \[
+            f(x) = 2x    
+        \]
+    \end{Large}
+    oppure
+    \begin{Large}
+        \[
+            f: \mathbb{R} \rightarrow \mathbb{R}
+        \]
+        \[
+            x \mapsto 2x
+        \]
+    \end{Large}
 
 \subsection{Grafico}
-Il grafico di una funzione è un sottoinsime del \textbf{prodotto cartesiano} tra $A$ e $B$.
-\begin{Large}
-\[
-    f:A \rightarrow B
-\]
-\[
-    Graf_{f}= \{(x,y) \in A \times B\ |\ y=f(x)\}
-\]
-\end{Large}
-\subsection{Iniettività e Suriettività}
-\subsubsection*{Definizione}
-Diciamo che $f:A\rightarrow B$ è \textbf{suriettiva} se l'immagine (sottoinsime del codominio) coincide
-con il codominio
-\begin{large}
-\[
-    \forall\ y \in B, \exists\ x \in A\ |\ y = f(x)    
-\]
-\[
-    f:A \rightarrow B
-\]
-\end{large}
-\vspace{-7ex}
-\begin{center}
-\begin{small}
-    \hspace{0.5cm}$su$
-\end{small}
-\end{center}
-\subsubsection*{Definizione}
-Diciamo che $f:A\rightarrow B$ è \textbf{iniettiva} se:
-\begin{large}
-\[
-    \forall\ y \in\ f(A), \exists! x\ \in\ A\ |\ y = f(x)    
-\]
-\[
-    f:A \rightarrow B    
-\]
-\end{large}
-\vspace{-7ex}
-\begin{center}
-\begin{small}
-    \hspace{0.5cm}$|\text{\hspace{-0.1cm}}-\text{\hspace{-0.1cm}}|$
-\end{small}
-\end{center}
-\subsubsection*{Definizione}
-Diciamo che $f:A\rightarrow B$ è \textbf{biunivoca} (o biiettiva o invertibile) se è sia suriettiva che iniettiva.
-
-\subsubsection*{Esempio}
-\[f: \mathbb{R} \rightarrow \mathbb{R}\]
-\[f(x) = x^{2}\]
-
-$f$ non è suriettiva perchè non assume valori negativi, quindi non copre tutto il codominio $\mathbb{R}$.
-$f$ non è iniettiva perchè per ogni $x > 0$ esiste più di una $y$
-
-\subsubsection*{Definizione}
-Sia $f: A\rightarrow B$ biunivoca, chiamiamo funzione \textbf{inversa} di $f$ (indicandola con $f^{-1}$ la funzione:
-\begin{Large}
-\[
-    f:B \rightarrow A)
-\]
-\[
-    \forall\ y\ \in\ B,\ f^{-1}(y) = y = f(x)    
-\]
-\end{Large}
-\subsection{Composizione di funzioni}
-\subsubsection*{Definizione}
-    Siano $X,Y,Z,W$ insiemi $\neq \oslash$,
-    \[f:X \rightarrow Y, g:Z\rightarrow W\ |\ f(X) \subseteq Z\]
-    chiamiamo \textbf{funzione composta} $g \circ f$ la funzione:
+    Il grafico di una funzione è un sottoinsime del \textbf{prodotto cartesiano} tra $A$ e $B$.
     \begin{Large}
-    \[
-        g \circ f: X \rightarrow W, (g \circ f)(x) = g(f(x)),\ \forall\ x \in X 
-    \]
+        \[
+            f:A \rightarrow B
+        \]
+        \[
+            Graf_{f}= \{(x,y) \in A \times B\ |\ y=f(x)\}
+        \]
     \end{Large}
+\subsection{Iniettività e Suriettività}
+    \subsubsection*{Definizione}
+        Diciamo che $f:A\rightarrow B$ è \textbf{suriettiva} se l'immagine (sottoinsime del codominio) coincide
+        con il codominio
+        \begin{large}
+            \[
+                \forall\ y \in B, \exists\ x \in A\ |\ y = f(x)    
+            \]
+            \[
+                f:A \rightarrow B
+            \]
+        \end{large}
+        \vspace{-7ex}
+        \begin{center}
+            \begin{small}
+                \hspace{0.5cm}$su$
+            \end{small}
+        \end{center}
+    \subsubsection*{Definizione}
+        Diciamo che $f:A\rightarrow B$ è \textbf{iniettiva} se:
+        \begin{large}
+            \[
+                \forall\ y \in\ f(A), \exists! x\ \in\ A\ |\ y = f(x)    
+            \]
+            \[
+                f:A \rightarrow B    
+            \]
+        \end{large}
+        \vspace{-7ex}
+        \begin{center}
+            \begin{small}
+                \hspace{0.5cm}$|\text{\hspace{-0.1cm}}-\text{\hspace{-0.1cm}}|$
+            \end{small}
+        \end{center}
+    \subsubsection*{Definizione}
+        Diciamo che $f:A\rightarrow B$ è \textbf{biunivoca} (o biiettiva o invertibile) se è sia suriettiva che iniettiva.
+
+    \subsubsection*{Esempio}
+        \[f: \mathbb{R} \rightarrow \mathbb{R}\]
+        \[f(x) = x^{2}\]
+
+        $f$ non è suriettiva perchè non assume valori negativi, quindi non copre tutto il codominio $\mathbb{R}$.
+        $f$ non è iniettiva perchè per ogni $x > 0$ esiste più di una $y$
+
+    \subsubsection*{Definizione}
+        Sia $f: A\rightarrow B$ biunivoca, chiamiamo funzione \textbf{inversa} di $f$ (indicandola con $f^{-1}$ la funzione:
+        \begin{Large}
+            \[
+                f:B \rightarrow A)
+            \]
+            \[
+                \forall\ y\ \in\ B,\ f^{-1}(y) = y = f(x)    
+            \]
+        \end{Large}
+\subsection{Composizione di funzioni}
+    \subsubsection*{Definizione}
+        Siano $X,Y,Z,W$ insiemi $\neq \oslash$,
+        \[f:X \rightarrow Y, g:Z\rightarrow W\ |\ f(X) \subseteq Z\]
+        chiamiamo \textbf{funzione composta} $g \circ f$ la funzione:
+        \begin{Large}
+        \[
+            g \circ f: X \rightarrow W, (g \circ f)(x) = g(f(x)),\ \forall\ x \in X 
+        \]
+        \end{Large}
 \subsubsection*{Esempio}
-\begin{Large}
-    \[
-        f : \mathbb{R} \rightarrow \mathbb{R}, f(x) = 2x + 1
-    \]
-    \[
-        g : \mathbb{R} \rightarrow \mathbb{R}, g(y) = y^{2}
-    \]
-    \[
-        (g \circ f)(x) = g(f(x)) = g(2x + 1) = (2x + 1)^{2} = 4x^{2} + 4x +1    
-    \]
-    \[
-        (f \circ g)(y) = f(g(y)) = f(y^{2}) = 2y^{2} + 1
-    \]
-    \[
-        g \circ f \neq f \circ g    
-    \]
-\end{Large}
+    \begin{Large}
+        \[
+            f : \mathbb{R} \rightarrow \mathbb{R}, f(x) = 2x + 1
+        \]
+        \[
+            g : \mathbb{R} \rightarrow \mathbb{R}, g(y) = y^{2}
+        \]
+        \[
+            (g \circ f)(x) = g(f(x)) = g(2x + 1) = {(2x + 1)}^{2} = 4x^{2} + 4x +1    
+        \]
+        \[
+            (f \circ g)(y) = f(g(y)) = f(y^{2}) = 2y^{2} + 1
+        \]
+        \[
+            g \circ f \neq f \circ g    
+        \]
+    \end{Large}
 \subsection{Funzione identità}
-\begin{Large}
-\[
-    f \circ f^{-1} = f^{-1} \circ f = Id    
-\]
-\[
-    Id(x) = x    
-\]
-\end{Large}
-\subsubsection*{Teorema}
-Siano $f: X \rightarrow Y, g: Z \rightarrow W$ invertibili, $Y = Z \Rightarrow g \circ f$ è invertibile 
-e $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
+    \begin{Large}
+        \[
+            f \circ f^{-1} = f^{-1} \circ f = Id    
+        \]
+        \[
+            Id(x) = x    
+        \]
+    \end{Large}
+    \subsubsection*{Teorema}
+        Siano $f: X \rightarrow Y, g: Z \rightarrow W$ invertibili, $Y = Z \Rightarrow g \circ f$ è invertibile 
+        e ${(g \circ f)}^{-1} = f^{-1} \circ g^{-1}$.
 
 \subsection{Funzioni di una variabile reale}
-Sia $c \subseteq \mathbb{R}, f:A \rightarrow \mathbb{R}$
-\subsubsection*{Esempi}
-\begin{itemize}
-\item $f(x) = 2x + 1$
-\item $f(x) = |x|$
-\item $f(x) = sgn(x)$
-\item $f(x) = [x]$
-\end{itemize}
-\subsubsection*{Definizione}
-Sia $f:A\rightarrow \mathbb{R}, A \subseteq \mathbb{R}$, diciamo che $f$ è limitata se lo è $f(A)$.
-\begin{Large}
-\[
-    sup\ f = sup\ f(A)    
-\]
-\end{Large}
-\vspace{-7.5ex}
-\begin{center}
-\begin{small}
-    \hspace{0.7cm}A
-\end{small}
-\end{center}
+    Sia $c \subseteq \mathbb{R}, f:A \rightarrow \mathbb{R}$
+    \subsubsection*{Esempi}
+        \begin{itemize}
+            \item $f(x) = 2x + 1$
+            \item $f(x) = |x|$
+            \item $f(x) = sgn(x)$
+            \item $f(x) = [x]$
+        \end{itemize}
+    \subsubsection*{Definizione}
+        Sia $f:A\rightarrow \mathbb{R}, A \subseteq \mathbb{R}$, diciamo che $f$ è limitata se lo è $f(A)$.
+        \begin{Large}
+            \[
+                \sup{f} = \sup{f(A)}    
+            \]
+        \end{Large}
+        \vspace{-7.5ex}
+        \begin{center}
+            \begin{small}
+                \hspace{0.7cm}A
+            \end{small}
+        \end{center}
 
-\subsubsection*{Definizione}
-$f:A \rightarrow \mathbb{R}, A \subseteq \mathbb{R}$
-\begin{itemize}
-    \item $f$ ha un massimo se lo ha $f(A)$
-    \item $f$ ha un minimo se lo ha $f(A)$
-\end{itemize}
-\begin{Large}
-    \[
-        \exists\ \bar{x} \in A\ |\ f(x) \leq f(\bar{x}) \forall\ x \in A
-    \]
+    \subsubsection*{Definizione}
+        $f:A \rightarrow \mathbb{R}, A \subseteq \mathbb{R}$
+        \begin{itemize}
+            \item $f$ ha un massimo se lo ha $f(A)$
+            \item $f$ ha un minimo se lo ha $f(A)$
+        \end{itemize}
+        \begin{Large}
+            \[
+                \exists\ \bar{x} \in A\ |\ f(x) \leq \underbrace{f(\bar{x})}_{\max{f}} \forall\ x \in A
+            \]
+        \end{Large}
+    \subsubsection*{Esempio}
+        \[
+            f:(0,1]\Rightarrow\mathbb{R}    
+        \]
+        \[
+            f(x) = 2x    
+        \]
+        \[
+            f((0,1]) = (0,2]    
+        \]
 
-\vspace{-3ex}
-\begin{center}
-    \hspace{2cm} $\Downarrow$
-\end{center}
-\vspace{-4ex}
-\begin{center}
-    \hspace{2cm} $max\ f$
-\end{center}
-\end{Large}
-\subsubsection*{Esempio}
-\[
-    f:(0,1]\Rightarrow\mathbb{R}    
-\]
-\[
-    f(x) = 2x    
-\]
-\[
-    f((0,1]) = (0,2]    
-\]
-
-$(0,2]$ è limitato $\Rightarrow f$ è limitata
-\[
-    inf\ f = 0  \text{\hspace{3ex} sup\ f = 2}
-\]
-\vspace{-4.5ex}
-\begin{small}
-\[(0,1] \text{\hspace{9ex}} (0,1]\]
-\end{small}
-\[
-    max\ f = 2  \text{\hspace{3ex}} \nexists min\ f = 2
-\]
-\vspace{-4ex}
-\begin{small}
-\[(0,1] \text{\hspace{9ex}} (0,1]\]
-\end{small}
+        $ (0,2]$ è limitato $\Rightarrow f$ è limitata
+        \[
+            \inf{f} = 0  \text{\hspace{3ex}} \sup{f} = 2
+        \]
+        \vspace{-4.5ex}
+        \begin{small}
+            \[(0,1] \text{\hspace{9ex}} (0,1]\]
+        \end{small}
+        \[
+            \max{f} = 2  \text{\hspace{3ex}} \nexists \min{f} = 2
+        \]
+        \vspace{-4ex}
+        \begin{small}
+            \[(0,1] \text{\hspace{9ex}} (0,1]\]
+        \end{small}
 
 \subsection{Funzioni crescenti e decrescenti}
+    \subsubsection*{Definizione}
+        $f:A\rightarrow \mathbb{R}, A \subseteq \mathbb{R}$ \\
+        Diciamo che $f$ è \textbf{crescente} ($f \nearrow$) se:
+        \begin{Large}
+            \[
+                \forall x_{1},x_{2}, x_{1}\leq x_{2} \Rightarrow f(x_{1}\leq f(x_{2}))
+            \]
+        \end{Large}
+    \subsubsection*{Definizione}
+        $f:A \rightarrow \mathbb{R}, A \subseteq \mathbb{R}$ \\
+        Diciamo che $f$ è \textbf{decrescente} ($f \searrow$) se:
+        \begin{Large}
+            \[
+                \forall x_{1},x_{2}, x_{1}\leq x_{2} \Rightarrow f(x_{1}\geq f(x_{2}))    
+            \]
+        \end{Large}
+    \subsubsection*{Definizione}
+        $f$ è strettamente crescente o decrescente se valgono le disuguaglianze strette.
+    \subsubsection*{Esempio}
+        $f:\mathbb{R} \rightarrow \mathbb{R}\ f(x) = mx + q$ \\
+        Verifico se e quando $f \nearrow$ \\
+        $x_{1},x_{2} \in \mathbb{R}\ |\ x_{1} \leq x_{2}$ \\
+        $f(x_{1} = mx_{1} + q)$ \\
+        $f(x_{2} = mx_{2} + q)$ \\ \\
+        $f(x_1) \leq f(x_2) \iff mx_{1} + \cancel{q} \leq mx_{2} + \cancel{q}$\\
+        $\iff m(\underbrace{x_1+x_{2}}_{\leq 0}) \leq 0$ \\
+        $\iff m \geq 0$ \\
+            \[
+                \Rightarrow f(x) = mx+q \text{ è } 
+                \begin{cases}
+                    \nearrow \text{ se } m \geq 0\\
+                    \searrow \text{ se } m < 0
+                \end{cases}
+            \]
+
+\subsection*{Monotonia}
+    \subsubsection*{Definizione}
+        Una funzione è \textbf{monotona} se è sempre crescente o sempre decrescente.
+    \subsubsection*{Teorema}
+        Sia $f:A \rightarrow \mathbb{R}, A \subseteq \mathbb{R}$
+        \begin{enumerate}
+            \item Se $f$ è strettamente monotona $\Rightarrow f$ è iniettiva $\Rightarrow f:A \rightarrow f(A)$ è invertibile.
+            \item $f^{-1}:f(A) \rightarrow A$ è strettamente monotona con la stessa monotonia di $f$.
+        \end{enumerate}
+    \subsubsection*{Dimostrazione}
+        \begin{enumerate}
+            \item Assumo $f$ strettamente crescente e voglio dimostrare che $f$ è iniettiva. \\ Siano:
+                \begin{itemize}
+                    \item $x_{1},x_{2} \in A, x_1 < x_{2} \Rightarrow f(x_{1}) < f(x_{2}) $
+                    \item $x_{1}, x_{2} \in A, x_1 > x_{2} \Rightarrow f(x_{1}) > f(x_{2}) $
+                \end{itemize}
+            \item Devo dimostrare che $f^{-1} \nearrow$.\\
+                $f^{-1}:f(A) \rightarrow A$\\
+                Siano $z_{1}, z_{2} \in f(A)$ con $z_{1} < z_{2}$,\\ devo dimostrare che $f^{-1}(z_{1}) < f^{-1}(z_{2})$. \\
+                Supponiamo per assurdo che: $f^{-1}(z_{1}) \geq f^{-1}(z_{2})$, ma $z_{1} = f(f^{-1}(z_{1}))$\\
+                Quindi:\\
+                $f(f^{-1}(z_{1})) \geq f(f^{-1}(z_{2})) \Rightarrow z_{1} \geq z_{2} \Rightarrow$ Assurdo (per ipotesi $z_{1} < z_{2}$).
+        \end{enumerate}
+\subsection{Simmetria di una funzione}
+    \subsubsection*{Definizione}
+        Sia $A$ \textbf{simmetrico} rispetto all'origine, sia $f:A \rightarrow \mathbb{R}$, diciamo che:
+        \begin{itemize}
+            \item $f$ è \textbf{pari} se $f(x) = f(-x)$
+            \item $f$ è \textbf{dispari} se $f(x) = -f(x)$
+        \end{itemize}
+    \subsection{Periodicità di una funzione}
 \subsubsection*{Definizione}
-$f:A\rightarrow \mathbb{R}, A \subseteq \mathbb{R}$ \\
-Diciamo che $f$ è \textbf{crescente} ($f \nearrow$) se:
-\begin{Large}
-    \[
-        \forall x_{1},x_{2}, x_{1}\leq x_{2} \Rightarrow f(x_{1}\leq f(x_{2}))
-    \]
-\end{Large}
-\subsubsection*{Definizione}
-$f:A \rightarrow \mathbb{R}, A \subseteq \mathbb{R}$ \\
-Diciamo che $f$ è \textbf{decrescente} ($f \searrow$) se:
-\begin{Large}
-    \[
-        \forall x_{1},x_{2}, x_{1}\leq x_{2} \Rightarrow f(x_{1}\geq f(x_{2}))    
-    \]
-\end{Large}
-\subsubsection*{Definizione}
-$f$ è strettamente crescente o decrescente se valgono le disuguaglianze strette.
+    Sia $A \subseteq \mathbb{R}$ \textbf{periodico}, sia $f: A \rightarrow \mathbb{R}$, diciamo che $f$ è $T-periodica$ se
+    \begin{Large}
+        \[
+            \forall\ x \in A,\ f(x) = f(x+kT) \forall\ k \in \mathbb{Z}    
+        \]
+    \end{Large}
